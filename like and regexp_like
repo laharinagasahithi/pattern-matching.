@@ -1,0 +1,7 @@
+The LIKE command is used in a WHERE clause to search for a specified pattern in a column.
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+regexp_like example:
+SELECT last_name FROM contacts WHERE REGEXP_LIKE (last_name, 'Aryan(o|e|a)n');
